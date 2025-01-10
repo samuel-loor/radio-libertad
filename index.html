@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Radio Libertad - Tu emisora favorita en Chone, Manabí. Escucha música, noticias y programas en vivo.">
+    
+    <link rel="preload" href="app.css" as="style">
+    <link rel="preload" href="_reset.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    <link rel="preload" href="app.js" as="script">
+    
+    <link rel="stylesheet" href="app.css?v=1.4.3">
+    <link rel="stylesheet" href="_reset.css?v=1.0.3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+    <title>Radio Libertad</title>
+</head>
+<body>
+    <header class="header">
+        <button class="button" aria-expanded="false" aria-controls="nav" aria-label="Menú">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a class="a" id="escuchar-en-vivo">Escucha en vivo</a></li>
+                <li class="li" ><a class="a" href="#contact-section">Contáctanos</a></li>
+                <li class="li"><a class="a" id="rendicion-de-cuentas">Rendición de cuentas</a></li>
+                <li class="li" ><a class="a" href="/assets/codigos de etica/codigo-etica-2024.pdf" target="_blank" rel="noopener noreferrer">Código de Ética</a></li>
+            </ul>
+        </nav>      
+    </header>
+    
+    <main>
+        <section class="content-banner" aria-label="Banner">
+            <picture>
+                <source media="(max-width: 720px)" srcset="/assets/banner-mobile1.svg">
+                <source media="(min-width: 721px)" srcset="/assets/banner-desktop1.svg">
+                <img src="/assets/banner-desktop1.svg" 
+                     alt="Banner de Radio Libertad" 
+                     loading="lazy">
+            </picture>
+        </section>
+
+        <section id="modal-rendicion" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="section-title">Rendiciones de Cuentas</h2>
+                <p>Aquí puedes descargar las rendiciones de cuentas de Radio Libertad</p>
+                <ul class="downloads">
+                    <li><a href="/rendicion-de-cuentas/rendicion-cuentas-libertad-2023.pdf" rel="noopener noreferrer" target="_blank" class="download-link">Rendición de cuentas 2022</a></li>
+                </ul>
+                <ul class="downloads"></ul>
+                    <li><a href="/rendicion-de-cuentas/rendicion-cuentas-libertad-2023.pdf" rel="noopener noreferrer" target="_blank" class="download-link">Rendición de cuentas 2023</a></li>
+                </ul>
+                <ul class="downloads"></ul>
+                    <li><a href="/rendicion-de-cuentas/rendicion-cuentas-libertad-2023.pdf" rel="noopener noreferrer" target="_blank" class="download-link">Rendición de cuentas 2024</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-schedule-hosts">
+            <div class="schedule-container section-container">
+                <div class="schedule-header">NUESTRA PROGRAMACIÓN</div>
+                
+                <div class="schedule-item">
+                <div class="time">05H00 - 06H00</div>
+                <div class="program">LIBERTAD CON MÚSICA POPULAR</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">06H00 - 08H00</div>
+                <div class="program">NOTICIERO ACTUALIDAD I</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">08H00 - 12H00</div>
+                <div class="program">LOS TROPICALES DEL MOMENTO</div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">12H00 - 13H00</div>
+                    <div class="program">LA HORA VALLENATA</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">14H30 - 15H00</div>
+                <div class="program special">SEMBRANDO (miércoles)</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">15H00 - 16H00</div>
+                <div class="program">ENTRE BALADA Y SALSA</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">16H00 - 16H30</div>
+                <div class="program">MÉXICO LINDO</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">16H30 - 17H00</div>
+                <div class="program">ATARDECER ECUATORIANO I</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">17H00 - 18H00</div>
+                <div class="program">NOTICIERO ACTUALIDAD II</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">18H00 - 19H00</div>
+                <div class="program">ATARDECER ECUATORIANO II</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">19H00 - 21H00</div>
+                <div class="program">LOS TROPICALES DEL MOMENTO</div>
+                </div>
+                
+                <div class="schedule-item">
+                <div class="time">19H00 - 21H00</div>
+                <div class="program special">ROCKOLA DEL VIERNES (viernes)</div>
+                </div>
+            </div>
+        
+            <div class="hosts-container section-container">
+                <div class="hosts-header">LOCUTORES</div>
+
+                <div class="host-item">
+                    <div class="host-photo">
+                        <img src="assets/foto-locutores/bismarck-cevallos.webp"  alt="Bismarck Cevallos" />
+                    </div>
+                    <div class="host-info">
+                        <div class="host-name">Bismarck Cevallos</div>
+                        <div class="host-show">Entre Balada y Salsa</div>
+                        <div class="host-schedule">Lunes a Viernes de 15h00 - 16h00</div>
+                        <div class="host-show">Rockola de Viernes</div>
+                        <div class="host-schedule">Todos los Viernes de 19h00 - 21h00</div>
+                    </div>
+                </div>
+
+                <div class="host-item">
+                    <div class="host-photo">
+                        <img src="assets/foto-locutores/victor-loor.webp"  alt="Victor Loor" />
+                    </div>
+                    <div class="host-info">
+                        <div class="host-name">Victor Loor</div>
+                        <div class="host-show">México Lindo</div>
+                        <div class="host-schedule">Lunes a Viernes 16h00 - 16h30</div>
+                        <div class="host-show">Atardecer Ecuatoriano I</div>
+                        <div class="host-schedule">Lunes a Viernes 16h30 - 17h00</div>
+                        <div class="host-show">Atardecer Ecuatoriano II</div>
+                        <div class="host-schedule">Lunes a Viernes 18h00 - 19h00</div>
+                        <div class="host-show">Fin de Semana</div>
+                        <div class="host-schedule">Sábados de 08h00 - 11h00</div>
+                    </div>
+                </div>
+
+                <div class="host-item">
+                    <div class="host-photo">
+                        <img src="assets/foto-locutores/edison-acosta.webp"  alt="Edison Acosta" />
+                    </div>
+                    <div class="host-info">
+                        <div class="host-name">Edison Acosta</div>
+                        <div class="host-show">Noticiero Actualidad I</div>
+                        <div class="host-schedule">Lunes a Viernes 06h00 - 08h00</div>
+                    </div>
+                </div>
+                
+                <div class="host-item">
+                    <div class="host-photo">
+                        <img src="assets/none-perfil.png" alt="Jimy Rivas" />
+                    </div>
+                    <div class="host-info">
+                        <div class="host-name">Jimy Rivas</div>
+                        <div class="host-show">Los tropicales del momento</div>
+                        <div class="host-schedule">Lunes a Viernes  08h00 - 12h00</div>
+                    </div>
+                </div>
+            
+                <div class="host-item">
+                    <div class="host-photo">
+                        <img src="assets/none-perfil.png"  alt="Jhonny Manzaba" />
+                    </div>
+                    <div class="host-info">
+                        <div class="host-name">Jhonny Manzaba</div>
+                        <div class="host-show">Fin de Semana</div>
+                        <div class="host-schedule">Sabados de 11h00 a 13h00 y de 15h00 a 17h00</div>
+                    </div>
+                </div>
+
+                <div class="host-item">
+                    <div class="host-photo">
+                        <img src="assets/none-perfil.png"  alt="Hugo Velez" />
+                    </div>
+                    <div class="host-info">
+                        <div class="host-name">Hugo Vélez</div>
+                        <div class="host-show">Fin de Semana</div>
+                        <div class="host-schedule">Sábados de 07h00 - 08h00</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="buzon-content section-container">
+                <h1 class="title-content">Buzón Ciudadano</h1>
+                <form class="buzon-form" id="buzon-form">
+                    <div class="form-left">
+                        <input class="input" type="text" name="nombre" placeholder="Nombre" required>
+                        <input class="input" type="text" name="apellido" placeholder="Apellido" required>
+                        <input class="input" type="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-right">
+                        <textarea class="textarea" name="mensaje" placeholder="Escribe tu mensaje" rows="8" required></textarea>
+                    </div>
+                    <div class="form-footer">
+                        <p class="mensaje" id="mensaje" style="display: none;">Tu mensaje ha sido enviado con éxito.</p>
+                        <button class="button" type="submit">Enviar</button>
+                    </div>
+                </form>
+        </section>
+        
+        <section class="contact-section section-container" id="contact-section">
+            <div class="contact-header">
+                <h1 class="title-content">Información de Contacto</h1>
+                <h2 class="contact-subtitle">Sandra Espinel Zambrano</h2>
+                <div class="contact-role">Representante</div>
+            </div>
+        
+            <div class="contact-list" id="contact-list">
+                <div class="contact-item">
+                    <div class="icon-container">
+                        <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">Cabina</div>
+                        <a href="https://api.whatsapp.com/send?phone=593993499990" class="contact-value" rel="noopener noreferrer" target="_blank" >099 349 9990</a>
+                    </div>
+                </div>
+            
+                <div class="contact-item">
+                    <div class="icon-container">
+                        <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">Email</div>
+                        <a href="mailto:radiolibertad740@hotmail.com" rel="noopener noreferrer" class="contact-value">radiolibertad740@hotmail.com</a>
+                    </div>
+                </div>
+            
+                <div class="contact-item">
+                    <div class="icon-container">
+                        <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">Dirección</div>
+                        <a href="https://g.co/kgs/ZvXQtMK" rel="noopener noreferrer" target="_blank" class="contact-value">Washington 203 y Atahualpa | Chone - Manabí</a>
+                    </div>
+                </div>
+            
+                <div class="contact-item">
+                    <div class="icon-container">
+                        <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">Gerencia</div>
+                        <div class="contact-value">
+                        <p class="contact-value">099 769 7184</p>
+                        <p class="contact-value">05 269 5411</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="social-icons">
+            <a href="https://www.facebook.com/radiolibertadmanabi/" class="social-icon facebook" rel="noopener noreferrer" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/radiolibertad740/" class="social-icon instagram" rel="noopener noreferrer" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=593993499990" class="social-icon whatsapp" rel="noopener noreferrer" target="_blank" aria-label="Whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </section>
+
+        <section class="audio-player">
+            <div class="player-info">
+                <div class="status-indicator" role="status" aria-label="Estado de la transmisión"></div>
+                <span class="radio-status">Escuchando Radio Libertad</span>
+            </div>
+            <audio class="audio" id="audio" preload="none">
+                <source src="https://stream.zeno.fm/p5tdruzh408uv" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="controls">
+                <button class="play-pause" aria-label="Reproducir/Pausar">
+                    <i class="fas fa-play" aria-hidden="true"></i>
+                </button>
+                <button class="mute" aria-label="Silenciar/Activar sonido">
+                    <i class="fas fa-volume-up" aria-hidden="true"></i>
+                </button>
+                <input type="range" class="volume" min="0" max="1" step="0.1" value="0.5" 
+                       aria-label="Control de volumen">
+            </div>
+            <div class="equalizer" aria-hidden="true">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </section>
+    </main>
+    <script defer src="app.js?v=1.1.1"></script>
+</body>
+</html>
