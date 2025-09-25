@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root{
+  color: aliceblue;
+  scroll-behavior: smooth;
+}
+
+@theme{
+  --color-primary: #101828;
+  --color-secondary: #023d2f;
+  --color-tertiary: #ff6b00;
+
+}
+
+.ba{
+  background-color: #101828;
+  background-color: #023d2f;
+  background-color: #ff6b00;
+}
